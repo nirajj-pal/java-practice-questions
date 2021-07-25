@@ -1,0 +1,42 @@
+Print the following pattern
+Pattern for N = 4
+...1
+..23
+.345
+4567
+
+The dots represent spaces.
+
+
+
+ANSWER:
+ 
+ 
+ import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		 int i,j,n,k;
+		 Scanner sc = new Scanner(System.in);
+		    
+		 n=sc.nextInt();
+		     for(i=1;i<=n;i++)
+		     {
+		    	 
+		    	 
+		    	 for(j=i;j<n;j++)
+		         {
+		             System.out.print(" ");
+		         }
+		 
+		 k=i;
+		         for(j=1;j<=i;j++,k++)
+		         {
+		             System.out.print(k);
+		         }
+		 
+		         System.out.println("");
+		     }
+		 }
+		}
