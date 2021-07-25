@@ -17,33 +17,43 @@ Sample Output 1 :
 
 ANSWER:
 
+package problemcheck;
 import java.util.Scanner;
-public class Solution {
+public class problemcheck {
+
+	
+		public static void main(String[] args) {
+			
+			/* Your class should be named Solution.
+		 	* Read input as specified in the question.
+		 	* Print output as specified in the question.
+			*/
+
+	
+			
+			 Scanner sc = new Scanner(System.in);
+			 
+			  		 int n =sc.nextInt();
+			  		 int i , j;
+			  		 
+			  		 for(i = 1;  i<=n; i++) {
+			  			 
+			  			 int k = i;
+			  			 
+			  			 for(j = 1; j<=i;j++, k++) {
+			  				 
+			  				 System.out.print(k);
+			  				 
+			  				 
+			  				
+			  			 }
+			  			 System.out.println();
+			  			
+			  		 }
+			  		 
+			  		
+			}
+
+}
 
 
-	public static void main(String[] args) {
-		
-		/* Your class should be named Solution.
-	 	* Read input as specified in the question.
-	 	* Print output as specified in the question.
-		*/
-
-		{
-		 int i,j,n,k,;
-		 Scanner sc = new Scanner(System.in);
-		  		 n=sc.nextInt();
-		     for(i=1;i<=n;i++,space=1)
-		    	 
-		    	
-		     {
-		 k=i;
-		         for(j=n;j<=i;j++,k++)
-		         {
-		             System.out.print(k);
-		         }
-		 
-		         System.out.println("");
-		     }
-		    	 
-		 }
-		}
