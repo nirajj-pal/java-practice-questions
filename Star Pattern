@@ -1,0 +1,70 @@
+Print the following pattern
+Pattern for N = 4
+. . .*
+. . *** 
+.  *****
+  *******
+
+
+The dots represent spaces.
+
+
+
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+Constraints :
+0 <= N <= 50
+Sample Input 1 :
+3
+Sample Output 1 :
+   *
+  *** 
+ *****
+Sample Input 2 :
+4
+Sample Output 2 :
+    *
+   *** 
+  *****
+ *******
+ 
+ ANSWER:
+ 
+ import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+		 int rows, i, space, star=0;;
+ 
+        Scanner in = new Scanner(System.in);
+       
+        rows = in.nextInt();
+ 
+        // printing one row in every iteration 
+        for(i = 1; i <= rows; i++) {
+            // Printing spaces 
+            for(space = 1; space <= rows-i; space++) {
+                System.out.print(" ");
+            }
+            // Printing stars 
+            while(star != (2*i - 1)) {
+                System.out.print("*");
+                star++;;
+            }
+     
+            star=0;
+            // move to next row 
+            System.out.print("\n");
+        }
+    }
+}
+	
